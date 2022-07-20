@@ -1,0 +1,135 @@
+ /*******************
+         media - queries
+       *******************/
+
+ /****** mobile view part  ******/
+ @media screen and (max-width: 688px) {
+     .container {
+         flex-direction: column;
+         height: 100%;
+         width: 80%;
+         justify-content: center;
+         align-items: center;
+     }
+
+     .header-right img {
+         width: 100%;
+         margin-bottom: -16px;
+         overflow: hidden;
+     }
+
+
+     .go-center {
+         text-align: center;
+     }
+
+     .go-center #header-button {
+         margin-left: -55px;
+         margin: 30px 0;
+     }
+
+     .buttons-and-blogs-container {
+         flex-direction: column;
+     }
+
+     .left-section {
+         padding-left: 30px;
+     }
+
+     .button-div {
+         background-color: #FFFFFF;
+     }
+
+     .right-section {
+         grid-template-columns: 1fr;
+         padding-left: 35px;
+     }
+
+     .blogs {
+         width: 100%;
+     }
+
+     .upcoming-matches {
+         grid-template-columns: 1fr;
+     }
+
+
+     footer {
+         height: 100%;
+     }
+
+     nav ul {
+         flex-direction: column;
+         list-style: none;
+         align-items: center;
+         padding: 20px;
+     }
+
+     nav ul li {
+         padding: 15px 10px;
+     }
+
+     .social-media-icon a {
+         margin-bottom: 30px;
+     }
+ }
+
+ /***** tablet view part *****/
+
+ @media screen and (min-width:689px) and (max-width:1124px) {
+     .container {
+         width: 90%;
+         height: 100%;
+     }
+
+     .buttons-and-blogs-container {
+         flex-direction: column;
+     }
+
+     .button-div {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         column-gap: 10px;
+         background-color: #fff;
+     }
+
+     .right-section {
+         width: 100%;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px 60px;
+
+     }
+
+     .upcoming-matches {
+         width: 100%;
+         grid-template-columns: repeat(2, 1fr);
+         gap: 30px 60px;
+     }
+
+     .view-button {
+         visibility: visible;
+         text-align: center;
+     }
+
+     .view-button button {
+         background-color: #DD0000;
+         color: #FFFFFF;
+         border: none;
+         padding: 10px 50px;
+         border-radius: 8px;
+         margin-bottom: 30px;
+     }
+
+     nav ul {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+     }
+
+     footer {
+         height: 340px;
+         width: 100%;
+     }
+
+ }
+
+ /******* the end *******/
